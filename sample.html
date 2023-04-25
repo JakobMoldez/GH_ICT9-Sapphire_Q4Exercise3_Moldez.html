@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cm to Feet converter</title>
+</head>
+<body>
+        <input id="inputcm" type="Number" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        <p id="outputFeet"></p>
+    <script>
+            function LengthConverter(valNum) {
+            document.getElementById("outputFeet").innerHTML=valNum*0.032808;
+        }
+    </script>
+</body>
+</html>
